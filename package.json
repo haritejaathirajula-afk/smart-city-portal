@@ -1,0 +1,26 @@
+{
+  "name": "smart-city-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart City Service Portal - Centralized civic management platform",
+  "scripts": {
+    "install:all": "cmd.exe /c \"cd server && npm install\" && cmd.exe /c \"cd client && npm install\"",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build",
+    "test:server": "cd server && npm test",
+    "db:init": "cd server && npm run db:init",
+    "db:seed": "cd server && npm run db:seed",
+    "db:test": "cd server && npm run db:test",
+    "db:setup": "cd server && npm run db:setup",
+    "start": "cd server && npm start",
+    "tunnel": "node scripts/start-tunnel.js",
+    "portal:network": "npm run build:client && node scripts/start-tunnel.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "localtunnel": "^2.0.2",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

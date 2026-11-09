@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Smart City Portal</string>
+    <string name="title_activity_main">Smart City Portal</string>
+    <string name="package_name">com.smartcity.portal</string>
+    <string name="custom_url_scheme">com.smartcity.portal</string>
+</resources>

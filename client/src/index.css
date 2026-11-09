@@ -1,0 +1,61 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #F5F7FA;
+    color: #163A5F;
+    min-height: 100vh;
+  }
+}
+
+/* Civic-tech accents & municipal cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.glass-dark {
+  background: rgba(22, 58, 95, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(35, 90, 148, 0.5);
+}
+
+.civic-gradient {
+  background: linear-gradient(135deg, #0E243D 0%, #163A5F 50%, #13A89E 100%);
+}
+
+.civic-hero-mesh {
+  background-color: #0E243D;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(209, 63%, 23%, 0.7) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(176, 79%, 37%, 0.4) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(212, 60%, 15%, 0.8) 0, transparent 50%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F7FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #13A89E;
+}

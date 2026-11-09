@@ -1,0 +1,16 @@
+node_modules
+client/node_modules
+server/node_modules
+client/dist
+.git
+.gradle
+.idea
+*.apk
+*.zip
+*.log
+.env
+.env.production
+.user_uploaded
+app/build
+gradle
+

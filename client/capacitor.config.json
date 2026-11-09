@@ -1,0 +1,9 @@
+{
+  "appId": "com.smartcity.portal",
+  "appName": "Smart City Portal",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  }
+}
