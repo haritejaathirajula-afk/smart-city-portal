@@ -78,7 +78,7 @@ export const getEffectiveApiUrl = () => {
   }
 
   // 4. Capacitor Android Native Wrapper default fallback (Pre-configured with live Cloudflare tunnel)
-  return 'https://podcast-prefers-targeted-ashley.trycloudflare.com/api';
+  return 'https://finder-lasting-jun-ntsc.trycloudflare.com/api';
 };
 
 const api = axios.create({
